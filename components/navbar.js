@@ -53,7 +53,9 @@ const Navbar = props => {
                         <Logo />
                     </Heading>
                 </Flex>
-            </Container>
+
+        
+             </Container>
         </Box>
     )
 }

@@ -23,22 +23,25 @@ const Logo = () => {
 
     return (
         <Link href="/">
-            <a>
                 <LogoBox>
-                    <Image src={footPrintImg} width={20} height={20} alt="logo" />
+                    <Image src={footPrintImg} width={20} height={20} alt="logo" onError={(e) => {
+                        console.error('Image failed to load', e.target.src);
+                    }} 
+                    />
                     <Text
                     color={useColorModeValue('gray.800', 'whiteAlpha.900' )}
                     fontFamily='M PLUS Rounded 1c'
                 fontWeight="bold" 
+                fontSize="14px"
+                letterSpacing=".05em"
                 ml={3}
                 >
                     Jonah Mirasol
                 </Text>
                 </LogoBox>
-            </a>
         </Link>
-    )
+    );
 
-}
+};
 
 export default Logo
