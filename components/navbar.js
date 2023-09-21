@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon  } from '@chakra-ui/icons'
 
-const LinkItem = ({ href, path, children}) => {
+const LinkItem = ({ href, path, children,}) => {
     const active = path === href
     const inactiveColor = useColorModeValue ('gray200', 'whiteAlpha.900')
     return (
@@ -61,12 +61,26 @@ const Navbar = props => {
             flexGrow={1}
             mt= {{ base: 4, md: 0}}
             >
-                <LinkItem href="/" path={path}>  {/*You need to actually put a link to a file here, you want "works" and "interests" here because you want to show that you have an interest in astronomy, a dynamic animation to get to the astronomy page would be cool. */}
-                    works
-                </LinkItem>
-            </Stack>
-            
-             </Container>
+            <Link>Works</Link>
+            <Link>Interests</Link>
+            <Link>Source</Link>
+
+             </Stack>
+             <Box flex={1} align="right">
+                <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
+                <Menu>
+                    <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" 
+                    />
+                    <MenuList>
+                        <MenuItem>Works</MenuItem>
+                        <MenuItem>Interests</MenuItem>
+                        <MenuItem as='a' href='https://github.com/JoMiras/luckydog-homepage'>Source</MenuItem>
+
+                    </MenuList>
+                </Menu>
+                </Box>
+             </Box>
+            </Container>
         </Box>
     )
 }

@@ -22,7 +22,7 @@ const Logo = () => {
     const footPrintImg = `/public/images/footprint${useColorModeValue('', '-dark')}.png`
 
     return (
-        <Link href="/">
+        <Link href="/public/images">
                 <LogoBox>
                     <Image src={footPrintImg} width={20} height={20} alt="logo" onError={(e) => {
                         console.error('Image failed to load', e.target.src);
