@@ -53,8 +53,19 @@ const Navbar = props => {
                         <Logo />
                     </Heading>
                 </Flex>
-
-        
+            <Stack
+            direction={{ base: 'column', md: 'row' }}
+            display = {{ base: 'none' , md: 'flex' }}
+            width = {{ base: 'full', md: 'auto' }}
+            alignItems="center"
+            flexGrow={1}
+            mt= {{ base: 4, md: 0}}
+            >
+                <LinkItem href="/" path={path}>  {/*You need to actually put a link to a file here, you want "works" and "interests" here because you want to show that you have an interest in astronomy, a dynamic animation to get to the astronomy page would be cool. */}
+                    works
+                </LinkItem>
+            </Stack>
+            
              </Container>
         </Box>
     )
