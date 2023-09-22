@@ -16,6 +16,7 @@ import {
     useColorMode
 } from '@chakra-ui/react'
 import { HamburgerIcon  } from '@chakra-ui/icons'
+import ThemeToggleButton from './layouts/theme-toggle-button.js'
 
 const LinkItem = ({ href, path, children,}) => {
     const active = path === href
@@ -61,12 +62,14 @@ const Navbar = props => {
             flexGrow={1}
             mt= {{ base: 4, md: 0}}
             >
-            <Link>Works</Link>
+
+          <Link>Works</Link>
             <Link>Interests</Link>
             <Link>Source</Link>
 
              </Stack>
              <Box flex={1} align="right">
+                <ThemeToggleButton />
                 <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                 <Menu>
                     <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" 
@@ -74,8 +77,9 @@ const Navbar = props => {
                     <MenuList>
                         <MenuItem>Works</MenuItem>
                         <MenuItem>Interests</MenuItem>
-                        <MenuItem as='a' href='https://github.com/JoMiras/luckydog-homepage'>Source</MenuItem>
-
+                        <MenuItem>About Me</MenuItem>
+                        <MenuItem as='a' href='https://github.com/JoMiras/luckydog-homepage'>Source Info</MenuItem>
+                        
                     </MenuList>
                 </Menu>
                 </Box>
