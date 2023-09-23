@@ -58,7 +58,7 @@ const Page = () => {
                 </BioSection>
                 <BioSection>
                     <BioYear>2022</BioYear>
-                    Oracle Human Capital Management 6 month training
+                    Oracle Human Capital Management 6 months training
                 </BioSection>
                 <BioSection>
                     <BioYear>2023</BioYear>
