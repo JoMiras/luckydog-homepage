@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-import pawPrint from '../public/PngItem_469932.png'
+import pawPrint from '../public/racoon.png'
 
 const LogoBox = styled.span`
 font-weight: bold;
