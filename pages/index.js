@@ -13,7 +13,13 @@ const Page = () => {
     return (
         <Layout>
         <Container>
-            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500, whiteAlpha.200')} p={3} mb={6} align="center" >
+            <Box borderRadius="lg" 
+            bg={useColorModeValue('#ffc100', 'whiteAlpha.200')} 
+            p={3} mb={6} 
+            align="center" 
+            boxShadow="md" 
+            color={useColorModeValue('black', 'white' )} 
+            >
             Hello, I'm a full-stack developer based in California!
                 </Box>
             <Box display={{md: 'flex'}}>
@@ -41,7 +47,7 @@ const Page = () => {
                 </Paragraph>
                 <Box align="center" my={4}>
                     <NextLink href="/works">
-                        <Button rightIcon={<ChevronRightIcon />} colorScheme='teal'>
+                        <Button rightIcon={<ChevronRightIcon />} colorScheme='green'>
                         My current projects
                         </Button>
                     </NextLink>
@@ -82,11 +88,12 @@ const Page = () => {
                     <Link href="https://drive.google.com/drive/folders/1g8Uq3o0GJqAjMjxUp639wvW2D506Sce8?usp=sharing" >
                         Photography
                     </Link>
-                    , Developing Projects, User Interface
+                    , Developing Projects, User Interface, and Dogs❣️
                 </Paragraph>
             </Section>
         </Container> 
         </Layout>
+
     )
 }
 
