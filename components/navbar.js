@@ -90,7 +90,7 @@ const Navbar = props => {
                     <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" 
                     />
                     <MenuList>
-                        <MenuItem>Works</MenuItem>
+                        <MenuItem as='a' href='/works'>Works</MenuItem>
                         <MenuItem>Interests</MenuItem>
                         <MenuItem>About Me</MenuItem>
                         <MenuItem as='a' href='https://github.com/JoMiras/luckydog-homepage'>Source Info</MenuItem>
