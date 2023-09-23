@@ -2,6 +2,7 @@ import { Container , Box, Heading, useColorModeValue, Link, chakra, Button, Imag
 import Section from '../components/layouts/section'
 import Paragraph from '../components/layouts/paragraph'
 import NextLink from 'next/link' 
+import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection , BioYear } from '../components/bio'
 
@@ -10,6 +11,7 @@ const Profile = chakra(Image, {
 })
 const Page = () => {
     return (
+        <Layout>
         <Container>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500, whiteAlpha.200')} p={3} mb={6} align="center" >
             Hello, I'm a full-stack developer based in California!
@@ -29,7 +31,7 @@ const Page = () => {
             </Box>
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
-                    Works
+                    Introduction
                 </Heading>
                 <Paragraph>
                 Jonah is a dedicated coder on a journey to get his foot into the tech industry. 
@@ -51,8 +53,12 @@ const Page = () => {
                     Timeline
                 </Heading>
                 <BioSection>
-                    <BioYear>1998</BioYear>
-                    Born in Hayward, California.
+                    <BioYear>2012-2016</BioYear>
+                    Space and Engineering Academy at Merrill F West High
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022</BioYear>
+                    Oracle Human Capital Management 6 month training
                 </BioSection>
                 <BioSection>
                     <BioYear>2023</BioYear>
@@ -69,13 +75,18 @@ const Page = () => {
                     My Interests
                 </Heading>
                 <Paragraph>
-                    Yosemite National Park, Music, {' '}
+                    <Link href ="https://unsplash.com/s/photos/yosemite-national-park" >
+                        Yosemite National Park,
+                    </Link>
+                     { ' '} Music, {' '}
                     <Link href="https://drive.google.com/drive/folders/1g8Uq3o0GJqAjMjxUp639wvW2D506Sce8?usp=sharing" >
                         Photography
                     </Link>
+                    , Developing Projects, User Interface
                 </Paragraph>
             </Section>
         </Container> 
+        </Layout>
     )
 }
 
