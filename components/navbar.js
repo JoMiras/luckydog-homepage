@@ -15,22 +15,25 @@ import {
     useColorModeValue,
     useColorMode
 } from '@chakra-ui/react'
-import { HamburgerIcon  } from '@chakra-ui/icons'
+import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './layouts/theme-toggle-button.js'
 
-const LinkItem = ({ href, path, children,}) => {
+const LinkItem = ({ href, path, children, target, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue ('gray200', 'whiteAlpha.900')
     return (
-        <NextLink href={href}>
-            <Link
-            p={2}
-            bg={active ? 'glassTeal' : undefined}
-            color={active ? '#202023' : inactiveColor}
-            >
-                {children}
-            </Link>
-        </NextLink>
+     <Link 
+     as={NextLink}
+     href={href}
+     scroll={false}
+     p={2}
+     bg={active ? 'grassTeal' : undefined}
+     color={active ? '#202023' : inactiveColor}
+     target={target}
+     {...props}
+     >
+        {children}
+     </Link>
     )
 }
 
@@ -63,9 +66,21 @@ const Navbar = props => {
             mt= {{ base: 4, md: 0}}
             >
 
-          <Link>Works</Link>
-            <Link>Interests</Link>
-            <Link>Source</Link>
+            <LinkItem href="/works" path={path}>
+                Works
+            </LinkItem>
+
+            <LinkItem href="/interests" path={path}>
+                Interests
+            </LinkItem>
+
+            <LinkItem href="aboutMe" path={path}>
+                About Me
+            </LinkItem>
+            
+            <Link href="https://github.com/JoMiras" isExternal>
+                Source
+            </Link>
 
              </Stack>
              <Box flex={1} align="right">
