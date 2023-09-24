@@ -22,6 +22,7 @@ const Page = () => {
             align="center" 
             boxShadow="md" 
             color={useColorModeValue('black', 'white' )} 
+            mt={6}
             >
             Hello, I&apos;m a full-stack developer based in California!
                 </Box>
@@ -75,7 +76,7 @@ const Page = () => {
                     Oracle Human Capital Management 6 months training
                 </BioSection>
                 <BioSection>
-                    <BioYear>2023</BioYear>
+                    <BioYear>2023 to current</BioYear>
                     Began Software Developer Internship with Bay Valley Tech
                 </BioSection>
                 <BioSection>
