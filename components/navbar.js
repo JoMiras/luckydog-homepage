@@ -91,9 +91,12 @@ const Navbar = props => {
                     />
                     <MenuList>
                         <MenuItem as='a' href='/works'>Works</MenuItem>
-                        <MenuItem>Interests</MenuItem>
-                        <MenuItem>About Me</MenuItem>
-                        <MenuItem as='a' href='https://github.com/JoMiras/luckydog-homepage'>Source Info</MenuItem>
+                        <MenuItem as ='a' href='/interests'>Interests</MenuItem>
+                        <MenuItem as='a' href='/about me'>About Me</MenuItem>
+                        <MenuItem as='a' href='https://github.com/JoMiras/luckydog-homepage'
+                        >
+                            Source Info
+                            </MenuItem>
                         
                     </MenuList>
                 </Menu>

@@ -9,7 +9,7 @@ font-weight: bold;
 font-size: 18px;
 display: inline-flex;
 align-iems: center;
-height: 45px;
+height: 50px;
 line-height: 35px;
 padding: 10px;
 
