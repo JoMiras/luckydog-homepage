@@ -23,7 +23,7 @@ const Works = () => (
 
                 <Section>
                     <WorkGridItem id="discord" title="Discord Bot" thumbnail={EyeSpy}>
-                        Discord Bot created for the purpose to time track in the format of "[Day, Date, Time] [Username] logged their hours."
+                        Discord Bot created for the purpose to time track in the format of [Day, Date, Time] [Username] logged their hours.
                     </WorkGridItem>
                     </Section>
 
