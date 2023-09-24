@@ -31,7 +31,12 @@ const Page = () => {
                 </Box>
                 <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} align="center"
                 >
-                    <Profile borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" maxWidth="100px" maxHeight="100px" display="inline-block" borderRadius="full" src="/JonahM.jpeg" alt="Profile Image" />
+                    <Profile borderColor="whiteAlpha.800"
+                     borderWidth={2} borderStyle="solid" 
+                     maxWidth="100px" maxHeight="100px" 
+                     display="inline-block" borderRadius="full" 
+                     src="/JonahM.jpeg" alt="Profile Image" 
+                     />
 
                 </Box>
             </Box>
@@ -81,11 +86,11 @@ const Page = () => {
                     My Interests
                 </Heading>
                 <Paragraph>
-                    <Link href ="https://unsplash.com/s/photos/yosemite-national-park" >
+                    <Link href ="https://unsplash.com/s/photos/yosemite-national-park" isExternal >
                         Yosemite National Park,
                     </Link>
                      { ' '} Music, {' '}
-                    <Link href="https://drive.google.com/drive/folders/1g8Uq3o0GJqAjMjxUp639wvW2D506Sce8?usp=sharing" >
+                    <Link href="https://drive.google.com/drive/folders/14FdKf3W45YHqAjhTo_OB7ndrqL_9c-7o?usp=sharing" isExternal >
                         Photography
                     </Link>
                     , Developing Projects, User Interface, and Dogs❣️
