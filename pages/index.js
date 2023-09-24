@@ -1,10 +1,14 @@
-import { Container , Box, Heading, useColorModeValue, Link, chakra, Button, Image } from '@chakra-ui/react'
+import { Container , Box, Heading, useColorModeValue, Link, chakra, Button, Image, SimpleGrid, List, ListItem} from '@chakra-ui/react'
 import Section from '../components/layouts/section'
 import Paragraph from '../components/layouts/paragraph'
 import NextLink from 'next/link' 
 import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection , BioYear } from '../components/bio'
+import { GridItem } from '../components/grid-items'
+import {
+    IoLogoGithub, IoLogoLinkedin
+} from 'react-icons/io5'
 
 const Profile = chakra(Image, {
     shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop) 
@@ -95,6 +99,28 @@ const Page = () => {
                     </Link>
                     , Developing Projects, User Interface, and Dogs❣️
                 </Paragraph>
+            </Section>
+
+            <Section delay={.3}>
+                <Heading as="h3" variant="section-title">
+                    Connect with me!
+                </Heading>
+                <List>
+                    <ListItem>
+                        <Link href="https://github.com/JoMiras" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoGithub /> }
+                            >
+                                @JoMiras
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem href="" target="_blank">
+                        <Button variant="ghost" colorScheme='teal' leftIcon={<IoLogoLinkedin /> }
+                        >
+                            @Jonah Mirasol
+                        </Button>
+                    </ListItem>
+                </List>
             </Section>
         </Container> 
         </Layout>
