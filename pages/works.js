@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/layouts/section' 
 import { WorkGridItem  } from '../components/grid-items'
 import Layout from '../components/layouts/article'
@@ -23,7 +23,7 @@ const Works = () => (
 
                 <Section>
                     <WorkGridItem id="discord" title="Discord Bot" thumbnail={EyeSpy}>
-                        Discord Bot created for the purpose to time track in the format of "[Day, Date, Time] [Username] logged their hours".
+                        Discord Bot created for the purpose to time track in the format of "[Day, Date, Time] [Username] logged their hours."
                     </WorkGridItem>
                     </Section>
 
