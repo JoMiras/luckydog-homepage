@@ -74,11 +74,11 @@ const Navbar = props => {
                 Interests
             </LinkItem>
 
-            <LinkItem href="/Aboutme" path={path}>
+            <LinkItem href="/aboutme" path={path}>
                 About Me
             </LinkItem>
             
-            <Link href="https://github.com/JoMiras" isExternal>
+            <Link href="https://github.com/JoMiras/luckydog-homepage" isExternal>
                 Source
             </Link>
 
@@ -92,7 +92,7 @@ const Navbar = props => {
                     <MenuList>
                         <MenuItem as='a' href='/works'>Works</MenuItem>
                         <MenuItem as ='a' href='/interests'>Interests</MenuItem>
-                        <MenuItem as='a' href='/about me'>About Me</MenuItem>
+                        <MenuItem as='a' href='/aboutme'>About Me</MenuItem>
                         <MenuItem as='a' href='https://github.com/JoMiras/luckydog-homepage'
                         >
                             Source Info
