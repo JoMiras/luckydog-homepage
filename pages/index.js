@@ -3,7 +3,7 @@ const Page = () => {
     return (
         <Container>
             <Box borderRadius="lg" bg="red" p={3} mb={6} align="center" >
-            Hello, I'm a full-stack developer based in California!
+            Hello, I&apos;m a full-stack developer based in California!
                 </Box>
             <Box display={{md: 'flex'}}>
                 <Box flexGrow={1}>
