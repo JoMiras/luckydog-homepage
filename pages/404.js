@@ -5,7 +5,7 @@ const Empty = () => {
     return (
     <Container> 
         <Heading as="h1">Uh-oh, this is empty.</Heading>
-        <Text>The page you were looking for was not found. I'm so sorry! </Text>
+        <Text>The page you were looking for was not found. I&apos;m so sorry! </Text>
         <Divider my={6} />
         <Box my={6} align="center">
             <NextLink href="/">

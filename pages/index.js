@@ -1,11 +1,10 @@
-import { Container , Box, Heading, useColorModeValue, Link, chakra, Button, Image, SimpleGrid, List, ListItem} from '@chakra-ui/react'
+import { Container , Box, Heading, useColorModeValue, Link, chakra, Button, Image, List, ListItem} from '@chakra-ui/react'
 import Section from '../components/layouts/section'
 import Paragraph from '../components/layouts/paragraph'
 import NextLink from 'next/link' 
 import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection , BioYear } from '../components/bio'
-import { GridItem } from '../components/grid-items'
 import {
     IoLogoGithub, IoLogoLinkedin
 } from 'react-icons/io5'
@@ -24,7 +23,7 @@ const Page = () => {
             boxShadow="md" 
             color={useColorModeValue('black', 'white' )} 
             >
-            Hello, I'm a full-stack developer based in California!
+            Hello, I&apos;m a full-stack developer based in California!
                 </Box>
             <Box display={{md: 'flex'}}>
                 <Box flexGrow={1}>

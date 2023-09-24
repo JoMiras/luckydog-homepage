@@ -10,7 +10,7 @@ const AboutMe = () => (
     <Layout title="About Me">
         <Container>
             <Heading as="h4" fontSize={20} mb={4}>
-                Places I've been to
+            Places I&apos;ve been to
             </Heading>
 
             <Section delay={0.1}>
