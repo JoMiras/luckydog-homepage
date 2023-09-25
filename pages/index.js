@@ -114,11 +114,13 @@ const Page = () => {
                             </Button>
                         </Link>
                     </ListItem>
-                    <ListItem href="https://linkedin.com/in/jonah-mirasol-66a56a178" target="_blank">
+                    <ListItem>
+                        <Link href="https://linkedin.com/in/jonah-mirasol-66a56a178" target="_blank">
                         <Button variant="ghost" colorScheme='teal' leftIcon={<IoLogoLinkedin /> }
                         >
                             @Jonah Mirasol
                         </Button>
+                        </Link>
                     </ListItem>
                 </List>
             </Section>
