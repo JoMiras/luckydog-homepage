@@ -114,7 +114,7 @@ const Page = () => {
                             </Button>
                         </Link>
                     </ListItem>
-                    <ListItem href="linkedin.com/in/jonah-mirasol-66a56a178" target="_blank">
+                    <ListItem href="https://linkedin.com/in/jonah-mirasol-66a56a178" target="_blank">
                         <Button variant="ghost" colorScheme='teal' leftIcon={<IoLogoLinkedin /> }
                         >
                             @Jonah Mirasol
