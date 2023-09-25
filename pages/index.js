@@ -76,7 +76,7 @@ const Page = () => {
                     Oracle Human Capital Management 6 months training
                 </BioSection>
                 <BioSection>
-                    <BioYear>2023 to current</BioYear>
+                    <BioYear>2023 to present</BioYear>
                     Began Software Developer Internship with Bay Valley Tech
                 </BioSection>
                 <BioSection>
