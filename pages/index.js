@@ -6,7 +6,7 @@ import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection , BioYear } from '../components/bio'
 import {
-    IoLogoGithub, IoLogoLinkedin, IoLogoEmailIcon
+    IoLogoGithub, IoLogoLinkedin, IoMailSharp
 } from 'react-icons/io5'
 
 const Profile = chakra(Image, {
@@ -124,7 +124,7 @@ const Page = () => {
                     </ListItem>
                     <ListItem> 
                         <Link href="mailto:jonamiraso@gmail.com" target="_blank">
-                            <Button variant="ghost" colorScheme='teal' leftIcon={<IoLogoEmailIcon /> }
+                            <Button variant="ghost" colorScheme='teal' leftIcon={<IoMailSharp /> }
                             >
                                 Have a question? Email me here!
                             </Button>
