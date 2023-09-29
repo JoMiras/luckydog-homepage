@@ -6,7 +6,7 @@ import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection , BioYear } from '../components/bio'
 import {
-    IoLogoGithub, IoLogoLinkedin
+    IoLogoGithub, IoLogoLinkedin, IoLogoEmailIcon
 } from 'react-icons/io5'
 
 const Profile = chakra(Image, {
