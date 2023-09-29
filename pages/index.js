@@ -122,6 +122,14 @@ const Page = () => {
                         </Button>
                         </Link>
                     </ListItem>
+                    <ListItem> 
+                        <Link href="mailto:jonamiraso@gmail.com" target="_blank">
+                            <Button variant="ghost" colorScheme='teal' leftIcon={<IoLogoEmailCon /> }
+                            >
+                                Have a question? Email me here!
+                            </Button>
+                        </Link>
+                    </ListItem>
                 </List>
             </Section>
         </Container> 
