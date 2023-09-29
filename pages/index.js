@@ -124,7 +124,7 @@ const Page = () => {
                     </ListItem>
                     <ListItem> 
                         <Link href="mailto:jonamiraso@gmail.com" target="_blank">
-                            <Button variant="ghost" colorScheme='teal' leftIcon={<IoLogoEmailCon /> }
+                            <Button variant="ghost" colorScheme='teal' leftIcon={<IoLogoEmailIcon /> }
                             >
                                 Have a question? Email me here!
                             </Button>
