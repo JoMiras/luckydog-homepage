@@ -10,7 +10,7 @@ const variants = {
 
 const Layout = ({ children, title }) => (
     <motion.article
-        initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ duration: 0.4, type: 'easeInOut'}} style={{ position:'relativve'  }} > 
+        initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ duration: 0.4, type: 'easeInOut'}} style={{ position:'relative'  }} > 
         <>
         {title && ( <Head>
             <title>{title} - Jonah Mirasol </title>

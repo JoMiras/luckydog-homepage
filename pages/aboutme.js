@@ -2,6 +2,7 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/layouts/section'
 import Layout from '../components/layouts/article'
 import { GridItem } from '../components/grid-items'
+import SlidingImage from '../components/layouts/slidingImage'
 
 import Alamere from '../public/Alamere.jpeg'
 import Pinecrest from '../public/Pinecrest.jpeg'
@@ -27,6 +28,9 @@ const AboutMe = () => (
                     />
                 </SimpleGrid>
             </Section>
+
+            <SlidingImage imageSrc="https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5JTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            />
         </Container>
     </Layout>
 )
