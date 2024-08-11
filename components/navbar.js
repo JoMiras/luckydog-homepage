@@ -19,6 +19,7 @@ import ThemeToggleButton from './layouts/theme-toggle-button.js'
 
 const LinkItem = ({ href, path, children, target, ...props }) => {
     const active = path === href
+<<<<<<< HEAD
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
         <Link
@@ -56,12 +57,46 @@ const Navbar = (props) => {
                 wrap="wrap"
                 align="center"
                 justify="space-between"
+=======
+    const inactiveColor = useColorModeValue ('gray200', 'whiteAlpha.900')
+    return (
+     <Link 
+     as={NextLink}
+     href={href}
+     scroll={false}
+     p={2}
+     bg={active ? 'grassTeal' : undefined}
+     color={active ? '#202023' : inactiveColor}
+     target={target}
+     {...props}
+     >
+        {children}
+     </Link>
+    )
+}
+
+const Navbar = props => {
+    const { path } = props
+
+    return (
+        <Box 
+        position="fixed" 
+        as="nav"
+        w="100%"
+        bg={useColorModeValue('#ffffff40', '#20202380')}
+        style={{backdropFilter:'blur(10px'}}
+        zIndex={1}
+        {...props}
+        >
+            <Container display ="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between"
+>>>>>>> origin/dev_branch
             >
                 <Flex align="center" mr={5}>
                     <Heading as="h1" size="lg" letterSpacing={'tighter'}>
                         <Logo />
                     </Heading>
                 </Flex>
+<<<<<<< HEAD
 
                 <Stack
                     direction={{ base: 'column', md: 'row' }}
@@ -111,9 +146,75 @@ const Navbar = (props) => {
                         </Menu>
                     </Box>
                 </Box>
+=======
+            <Stack
+            direction={{ base: 'column', md: 'row' }}
+            display = {{ base: 'none' , md: 'flex' }}
+            width = {{ base: 'full', md: 'auto' }}
+            alignItems="center"
+            flexGrow={1}
+            mt= {{ base: 4, md: 0}}
+            >
+
+            <LinkItem href="/works" path={path}>
+                Works
+            </LinkItem>
+
+            <LinkItem href="/interests" path={path}>
+                Interests
+            </LinkItem>
+
+            <LinkItem href="/aboutme" path={path}>
+                About Me
+            </LinkItem>
+            
+            <Link href="https://github.com/JoMiras/luckydog-homepage" isExternal>
+                Source
+            </Link>
+
+             </Stack>
+             <Box flex={1} align="right">
+                <ThemeToggleButton />
+                <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
+                <Menu>
+                    <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" 
+                    />
+                    <MenuList>
+                        <MenuItem>
+                        <NextLink href="/works">
+                            Works
+                        </NextLink>
+                        </MenuItem>
+
+                        <MenuItem>
+                            <NextLink href="/interests">
+                                Interests
+                            </NextLink>
+                        </MenuItem>
+
+                        <MenuItem>
+                        <NextLink href="/aboutme">
+                            About Me
+                        </NextLink>
+                            </MenuItem>
+
+                        <MenuItem as='a' href='https://github.com/JoMiras/luckydog-homepage'
+                        >
+                            Source Info
+                            </MenuItem>
+                        
+                    </MenuList>
+                </Menu>
+                </Box>
+             </Box>
+>>>>>>> origin/dev_branch
             </Container>
         </Box>
     )
 }
 
+<<<<<<< HEAD
 export default Navbar
+=======
+export default Navbar
+>>>>>>> origin/dev_branch

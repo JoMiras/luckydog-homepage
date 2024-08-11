@@ -199,10 +199,6 @@ module.exports = import("@chakra-ui/theme-tools");;
   \*********************************/
 /***/ ((module) => {
 
-module.exports = import("@emotion/react");;
-
-/***/ }),
-
 /***/ "@emotion/styled":
 /*!**********************************!*\
   !*** external "@emotion/styled" ***!
