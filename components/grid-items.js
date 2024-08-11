@@ -22,7 +22,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 )
 
 
-export const WorkGridItem = ({ children, id, title, thumbnail, href }) => (
+export const WorkGridItem = ({ children, id, title, thumbnail }) => (
     <Box w="100%" align="center" mb={4} >
         <NextLink href={`../pages/works.js${id}`} passHref>
             <LinkBox cursor="pointer">

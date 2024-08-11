@@ -131,9 +131,9 @@ const Page = () => {
                 <Paragraph>
                    Olympic Weightlifting, Developing projects, Dogs❣️, Astronomy, 
                    and appreciating nature. 
-                   Because I'm such a curious individual,
+                   Because I&#39;m such a curious individual,
                    I have an endless amount of topics and interest in every
-                   nook and cranny. There's just so much that life has to offer you know?
+                   nook and cranny. There&apos;s just so much that life has to offer you know?
                 </Paragraph>
                 <ProgressBar></ProgressBar>
             </Section>

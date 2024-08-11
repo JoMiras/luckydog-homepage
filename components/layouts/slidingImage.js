@@ -1,7 +1,6 @@
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const SlidingImage = ({ imageSrc }) => {
-    const controls = useAnimation();
 
     const variants = {
         initial: { opacity: 0, x: '-100w' }, // Start position

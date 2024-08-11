@@ -27,10 +27,10 @@ const Dedicated = () => {
                         dug into the trash can for food like a raccoon,
                         he got lost one time, refused to let go of the rat poison in his mouth. 
                         The memories I can recount go on and on, and I smile on every single one of them
-                        no matter how greedy he was. It's the reason why I began to see raccoons so differently,
+                        no matter how greedy he was. It&#39;s the reason why I began to see raccoons so differently,
                         I even decided to make it as part of my brand. A raccoon animal accompanied with the name: LuckyDog.
                         I still think about him from time to time, how could I not when he tagged along for a majority of my life,
-                        there were so many times where my decisions revolved around him. I'll miss that little guy, he was such a delight.
+                        there were so many times where my decisions revolved around him. I&apos;ll miss that little guy, he was such a delight.
 
                         <Box as="span" mt={4} display="block">
                             Wait for me up there, you probably stink right now. 
