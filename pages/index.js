@@ -3,11 +3,13 @@ import Section from '../components/layouts/section'
 import Paragraph from '../components/layouts/paragraph'
 import NextLink from 'next/link' 
 import Layout from '../components/layouts/article'
+import ProgressBar from '../components/layouts/progressBar'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { BioSection , BioYear } from '../components/bio'
+import { BioYear , BioList, SubBioList} from '../components/bio'
 import {
     IoLogoGithub, IoLogoLinkedin, IoMailSharp
 } from 'react-icons/io5'
+import { SiKofi } from "react-icons/si"; 
 
 const Profile = chakra(Image, {
     shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop) 
@@ -24,24 +26,23 @@ const Page = () => {
             color={useColorModeValue('black', 'white' )} 
             mt={6}
             >
-            Hello, I&apos;m a full-stack developer based in California!
+            Hello, I&apos;m a Full-stack developer based in California!
                 </Box>
             <Box display={{md: 'flex'}}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
                         Jonah Mirasol
                     </Heading>
-                    <p>Software Developer ( Nature Connossieur / Creative / Problem Solver )</p>
+                    <p>Fullstack Software Developer (He / Him / His)</p>
                 </Box>
                 <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} align="center"
                 >
                     <Profile borderColor="whiteAlpha.800"
                      borderWidth={2} borderStyle="solid" 
-                     maxWidth="100px" maxHeight="100px" 
+                     maxWidth="150px" maxHeight="200px" 
                      display="inline-block" borderRadius="full" 
-                     src="/JonahM.jpeg" alt="Profile Image" 
+                     src="/YosemiteImage.jpeg" alt="Profile Image" 
                      />
-
                 </Box>
             </Box>
             <Section delay={0.1}>
@@ -49,10 +50,18 @@ const Page = () => {
                     Introduction
                 </Heading>
                 <Paragraph>
-                Jonah is a dedicated coder on a journey to get his foot into the tech industry. 
-                Through creations of various passion projects, he is able to utilize a creative mindset while solving problems within the development process. 
-                My portfolio is a display of projects to come, and a showcase of projects that I have finished. 
-                Additionally, I want to highlight my commitment to learning the art, showcase innovation, and learning about the possibilities that the Tech World can provide society in the future. 
+                 Welcome to my page! 
+                I am a dedicated coder pursuing a career path in the tech industry. 
+                Being first exposed to programming robots during my Sophomore in high school. 
+                It was hard at first, and little did I know that that first exposure would be the foundation
+                of my understanding of coding syntax and code structure. 
+                Once I began taking classes in college as well as registering for a coding bootcamp known as Bay Valley Tech.
+                Upon completion of various projects utilizing HTML & CSS, JavaScript, Python, and SQL. 
+                It only cultivated my love and passion for developing projects because I realized that the possibilities that coding projects have are endless. 
+                Hopefully you may find some use and/or enjoyment of my creations, I take great pride in my work! <br></br>
+
+                <br></br> - Jonah Mirasol
+
                 </Paragraph>
                 <Box align="center" my={4}>
                     <NextLink href="/works">
@@ -65,24 +74,54 @@ const Page = () => {
 
             <Section delay={.2}>
                 <Heading as="h3" variant="section-title" >
-                    Timeline
+                    My Timeline
                 </Heading>
-                <BioSection>
-                    <BioYear>2012-2016</BioYear>
-                    Space and Engineering Academy at Merrill F West High
-                </BioSection>
-                <BioSection>
-                    <BioYear>2022</BioYear>
-                    Oracle Human Capital Management 6 months training
-                </BioSection>
-                <BioSection>
-                    <BioYear>2023 to present</BioYear>
-                    Began Software Developer Internship with Bay Valley Tech
-                </BioSection>
-                <BioSection>
-                    <BioYear>2023 to present</BioYear>
-                    Working as an Operations Specialist for Bay Valley Tech
-                </BioSection>
+                
+                <BioList>
+                    <li>
+                        <BioYear>Space and Engineering Academy</BioYear>
+                        <SubBioList>
+                            <li>Merrill F. West High (2012-2016)</li>
+                        </SubBioList>
+                    </li>
+
+
+                    <li>
+                        <BioYear>Oracle Human Capital Management training program</BioYear>
+                        <SubBioList>
+                            <li>GenSpark (June - September 2022)</li>
+                        </SubBioList>
+                    </li>
+
+                    <li>
+                        <BioYear>Software Developer Intern</BioYear>
+                        <SubBioList>
+                            <li>Bay Valley Tech (January 2023 - August 2024)</li>
+                        </SubBioList>
+                    </li>
+
+                    <li>
+                        <BioYear>Operation Specialist</BioYear>
+                        <SubBioList>
+                            <li>Bay Valley Tech (June 2023 - August 2024)</li>
+                        </SubBioList>
+                    </li>
+
+                    <li>
+                        <BioYear>SCRUM Master</BioYear>
+                        <SubBioList>
+                            <li>Bay Valley Tech (February 2024 - August 2024)</li>
+                        </SubBioList>
+                    </li>
+
+                    <li>
+                        <BioYear>Autonomous Vehicle Operator L5</BioYear>
+                        <SubBioList>
+                            <li>Zoox (August 2024 - Present) </li>
+                        </SubBioList>
+                    </li>
+
+                </BioList>
             </Section>
 
             <Section delay={.3}>
@@ -90,15 +129,13 @@ const Page = () => {
                     My Interests
                 </Heading>
                 <Paragraph>
-                    <Link href ="https://unsplash.com/s/photos/yosemite-national-park" isExternal >
-                        Yosemite National Park,
-                    </Link>
-                     { ' '} Music, {' '}
-                    <Link href="https://drive.google.com/drive/folders/14FdKf3W45YHqAjhTo_OB7ndrqL_9c-7o?usp=sharing" isExternal >
-                        Photography
-                    </Link>
-                    , Developing Projects, User Interface, and Dogs❣️
+                   Olympic Weightlifting, Developing projects, Dogs❣️, Astronomy, 
+                   and appreciating nature. 
+                   Because I'm such a curious individual,
+                   I have an endless amount of topics and interest in every
+                   nook and cranny. There's just so much that life has to offer you know?
                 </Paragraph>
+                <ProgressBar></ProgressBar>
             </Section>
 
             <Section delay={.3}>
@@ -122,11 +159,21 @@ const Page = () => {
                         </Button>
                         </Link>
                     </ListItem>
+
+                    <ListItem>
+                        <Link href="https://ko-fi.com/pythias1998" target="_blank">
+                            <Button variant="ghost" colorScheme='teal' leftIcon={<SiKofi /> }
+                            >
+                                Buy me a Kofi?
+                            </Button>
+                        </Link>
+                    </ListItem>
+
                     <ListItem> 
                         <Link href="mailto:jonamiraso@gmail.com" target="_blank">
                             <Button variant="ghost" colorScheme='teal' leftIcon={<IoMailSharp /> }
                             >
-                                Have a question? Email me here!
+                                If you need advice or if you have any questions, email me here!
                             </Button>
                         </Link>
                     </ListItem>

@@ -1,8 +1,13 @@
-import { Text } from '@chakra-ui/react'
+import { Text, Container } from '@chakra-ui/react'
 
 const Test = () => {
     return (
-    <Text>In case I don't finish this, it's under construction. Thank you for your understanding. </Text>
+        <Container mt= {{ base: '20px', md: '90px' }}> 
+        <Text><strong>
+            This page is under construction. Thank you for understanding.
+            </strong>
+            </Text>
+        </Container>
     )
 }
 export default Test

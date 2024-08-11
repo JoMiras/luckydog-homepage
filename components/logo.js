@@ -36,7 +36,7 @@ const Logo = () => {
                 letterSpacing=".03em"
                 ml={3}
                 >
-                    Jonah Mirasol
+                    LuckyDog
                 </Text>
                 </LogoBox>
         </Link>)

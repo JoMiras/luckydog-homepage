@@ -12,10 +12,10 @@ const ProgressBar = () => {
         left: 0, 
         width: "100%",
         height: "5px", // Adjust the height as needed
-        backgroundColor: "green", // Customize the color as needed
+        backgroundColor: "teal", // Customize the color as needed
         transformOrigin: "left", // Ensure scaling happens from the left side
         scaleX: scrollYProgress,
-        zIndex: 9999,
+        zIndex: -9999,
       }}
     />
   );
