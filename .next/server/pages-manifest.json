@@ -2,10 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/aboutme": "pages/aboutme.js",
-<<<<<<< HEAD
   "/works": "pages/works.js",
-=======
->>>>>>> origin/dev_branch
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/interests": "pages/interests.js",
+  "/aboutme": "pages/aboutme.js"
 }

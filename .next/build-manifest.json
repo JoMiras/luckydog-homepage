@@ -12,14 +12,11 @@
   ],
   "rootMainFiles": [],
   "pages": {
-<<<<<<< HEAD
-=======
     "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
->>>>>>> origin/dev_branch
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -34,14 +31,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/aboutme.js"
-<<<<<<< HEAD
+    ],
+    "/interests": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/interests.js"
     ],
     "/works": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/works.js"
-=======
->>>>>>> origin/dev_branch
     ]
   },
   "ampFirstPages": []

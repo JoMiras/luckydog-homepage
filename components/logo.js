@@ -36,11 +36,7 @@ const Logo = () => {
                 letterSpacing=".03em"
                 ml={3}
                 >
-<<<<<<< HEAD
                     LuckyDog
-=======
-                    Jonah Mirasol
->>>>>>> origin/dev_branch
                 </Text>
                 </LogoBox>
         </Link>)
