@@ -2,6 +2,7 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/layouts/section' 
 import { WorkGridItem  } from '../components/grid-items'
 import Layout from '../components/layouts/article'
+import ProgressBar from '../components/layouts/progressBar'
 
 import thumbAlumni from '../public/images/works/Otters.png'
 import EyeSpy from '../public/images/works/EyeSpy.png'
@@ -17,6 +18,8 @@ const Works = () => (
             </Heading>
 
             <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                <ProgressBar>
+                </ProgressBar>
             <Section>
                     <WorkGridItem
                         id="alumni"
