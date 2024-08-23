@@ -115,7 +115,7 @@ const Page = () => {
                     </li>
 
                     <li>
-                        <BioYear>Autonomous Vehicle Operator L5</BioYear>
+                        <BioYear>Software Testing Technician</BioYear>
                         <SubBioList>
                             <li>Zoox (August 2024 - Present) </li>
                         </SubBioList>
