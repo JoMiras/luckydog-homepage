@@ -77,7 +77,7 @@ const Navbar = (props) => {
                     </LinkItem>
 
                     <LinkItem href="/interests" path={path}>
-                        Interests
+                        Proficiencies
                     </LinkItem>
 
                     <LinkItem href="/aboutme" path={path}>
@@ -99,10 +99,10 @@ const Navbar = (props) => {
                                     Works
                                 </MenuItem>
                                 <MenuItem as={NextLink} href="/interests">
-                                    Interests
+                                    Proficiencies
                                 </MenuItem>
                                 <MenuItem as={NextLink} href="/aboutme">
-                                    Dedicated to
+                                    Dedicated To
                                 </MenuItem>
                                 <MenuItem as={Link} href="https://github.com/JoMiras/luckydog-homepage" isExternal>
                                     Source Info
